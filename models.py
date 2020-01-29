@@ -1,13 +1,18 @@
-from app import db
+class ActorMovies:
+    def __init__(self, actor_first_name, actor_last_name, movies_count):
+        self.actor_first_name = actor_first_name
+        self.actor_last_name = actor_last_name
+        self.movies_count = movies_count
 
 
-class Country(db.Model):
-    __tablename__ = "country"
-    country_id = db.Column(db.Integer, primary_key=True)
-    country = db.Column(db.String)
+class GetCountry():
 
     def __init__(self, country):
         self.country = country
 
-    def __repr__(self):
-        return '<country %r>' % self.country
+
+class Actors():
+
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
